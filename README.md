@@ -1,6 +1,6 @@
 Virtual Concert - Visualizing Music in VR
 
-This is my first mini-project for a Virtual Reality course at IISc, a demo can be found here: http://cs.brandeis.edu/~arya/vr 
+This is my first mini-project for a Virtual Reality course, a demo can be found here: http://cs.brandeis.edu/~arya/vr 
 
 As well as being a Computer Science major, I am also studying Music and have taken many courses on Electronic Music, so I wanted my project to be a melding of the two diciplines. I wanted to take the act of listening to music and make it an immersive experience, so that someone could see the patterns happening, not just listen to the music.
 
@@ -22,6 +22,12 @@ https://www.bignerdranch.com/blog/music-visualization-with-d3-js/
 
 At this point, I looked into these libraries, which do a FFT (fast fourier transform) on the music. And the amazing thing is that they line up exactly with the code! Because the code is interconnected with the music, this allowed me to just start the animation when the music was loaded!
 
-After doing the FFT, I found out how to modify the values of the particles to change continuously. The problem with the weather system is that the data is static, so it didn't change over time. 
+The FFT allows me to query for the frequencies at any point in time, something that would be perfect for displaying. I decided to map the FFT to the color of the particles, as I was using electronic music and it seemed fitting.
+
+After doing the FFT, I found out how to modify the values of the particles to change continuously. The problem with the weather system is that the data is static, so it didn't change over time. Eventually I found out how to change the animation constantly without too much lag, leading to the effects that are found now.
+
+Things to do:
 
 The big problem now is that I can't get it to load on mobile browsers, which sort of defeats the point. I am actively looking for help in fixing the issue, however. 
+
+I also need to fine tune the values of the FFT, to make sure they map correctly to the RGB values of the particles - I have a suspicion now that some data is being lost.
