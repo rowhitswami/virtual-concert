@@ -2,6 +2,8 @@ Virtual Concert - Visualizing Music in VR
 
 This is my first mini-project for a Virtual Reality course, a demo can be found here: http://cs.brandeis.edu/~arya/vr 
 
+To run locally, you need to set up a server locally (such as with `python3 -m http.server` in the same folder), and have a song r.mp3 in the same folder. 
+
 As well as being a Computer Science major, I am also studying Music and have taken many courses on Electronic Music, so I wanted my project to be a melding of the two diciplines. I wanted to take the act of listening to music and make it an immersive experience, so that someone could see the patterns happening, not just listen to the music.
 
 I started out first by looking into Unity, but the project looked like it would be more adapted to WebGL, so I looked out for tutorials on the subject.
